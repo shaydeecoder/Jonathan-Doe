@@ -105,6 +105,10 @@ ul {
   display: none;
 }
 
+#mobile-nav a:hover {
+  color: var(--red);
+}
+
 /* hero */
 #hero {
   min-height: 100vh;
@@ -398,7 +402,7 @@ footer p span {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: var(--blue-black);
+    background: rgba(4, 17, 25, 0.6);
   }
   #mobile-nav li {
     margin: 0 1rem;
@@ -454,6 +458,15 @@ footer p span {
 }
 
 @media (max-width: 768px) {
+  /* nav */
+  #mobile-nav li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+  }
+  #mobile-nav li:hover {
+    border-bottom: 1px solid var(--red);
+  }
+
   /* hero */
   #hero {
     font-size: 25px;
@@ -461,6 +474,7 @@ footer p span {
   #hero h1 {
     font-size: 50px;
   }
+
   /* Section - Facts */
   #facts .row .outline {
     margin-right: 0;
