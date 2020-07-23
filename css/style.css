@@ -1,0 +1,344 @@
+@font-face {
+  font-family: Univers;
+  src: url('../fonts/UniversLTStd.otf');
+}
+
+@font-face {
+  font-family: UniversBold;
+  src: url('../fonts/UniversLTStd-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: UniversBlack;
+  src: url('../fonts/UniversLTStd-Bold.otf');
+  font-weight: bold;
+}
+
+:root {
+  /* Colors */
+  --red: #AF112E;
+  --blue-black: #041119;
+  --light-blue-black: #0B1820;
+  --gray: #36393E;
+  --white: #fff;
+
+  /* font */
+  --font-stack: Univers;
+  --font-stack-bold: UniversBold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blue-black);
+  color: var(--white);
+  font-family: var(--font-stack);
+  font-size: 18px;
+}
+
+h1 {
+  font-family: var(--font-stack-bold);
+  font-weight: bolder;
+}
+
+ul {
+  list-style: none;
+}
+
+/* utilities */
+.base-color {
+  color: var(--red);
+}
+
+.btn {
+  min-width: 200px;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 30px;
+  transition: ease-in 1s;
+  /* font-size: 16px; */
+}
+
+.btn:hover {
+  border: 1.5px solid var(--white);
+  color: var(--white);
+}
+
+.btn.outline {
+  background: none;
+  border: 1.5px solid var(--red);
+}
+
+.btn.outline:hover {
+  color: var(--red);
+}
+
+.section-title {
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: UniversBold;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hline hr {
+  width: 500px;
+  height: .5px;
+  background-color: var(--gray);
+  display: flex;
+  justify-self: center;
+}
+
+/* mobile nav */
+#mobile-nav {
+  display: none;
+}
+
+/* hero */
+#hero {
+  height: 100vh;
+  position: relative;
+}
+
+#hero .hero-img {
+  width: 50%;
+  height: 100%;
+  background: url('../img/hero1.png') no-repeat right bottom/contain, url('../img/hero2.png') no-repeat;
+}
+
+#hero .hero-text {
+  width: 40%;
+  padding: 2rem;
+  position: absolute;
+  top: 13%;
+  left: 45%
+}
+
+#hero .btn {
+  margin-right: 2rem;
+}
+
+#hero #lg-nav {
+  position: absolute;
+  top: 53%;
+  right: 5%;
+  text-align: center;
+}
+
+#hero #lg-nav ul li {
+  margin: 1rem;
+}
+
+#hero #lg-nav ul li:last-child {
+  margin-bottom: 0;
+}
+
+#hero #lg-nav a.nav-btn {
+  display: block;
+  min-height: 50px;
+  min-width: 50px;
+  background: var(--red);
+  transition: ease-in-out .5s;
+}
+
+#hero #lg-nav .nav-btn.home {
+  background: url('../img/nav-buttons/home.png') no-repeat center right/contain;
+}
+
+#hero #lg-nav .nav-btn.about {
+  background: url('../img/nav-buttons/about.png') no-repeat center right/contain;
+}
+
+#hero #lg-nav .nav-btn.portfolio {
+  background: url('../img/nav-buttons/portfolio.png') no-repeat center right/contain;
+}
+
+#hero #lg-nav .nav-btn.contact {
+  background: url('../img/nav-buttons/contact.png') no-repeat center right/contain;
+}
+
+#hero #lg-nav .nav-btn.home:hover {
+  background: url('../img/nav-buttons/home-hover.png') no-repeat center center/contain;
+}
+
+#hero #lg-nav .nav-btn.about:hover {
+  background: url('../img/nav-buttons/about-hover.png') no-repeat center center/contain;
+}
+
+#hero #lg-nav .nav-btn.portfolio:hover {
+  background: url('../img/nav-buttons/portfolio-hover.png') no-repeat center center/contain;
+}
+
+#hero #lg-nav .nav-btn.contact:hover {
+  background: url('../img/nav-buttons/contact-hover.png') no-repeat center center/contain;
+}
+
+#hero #lg-nav .nav-btn.home:hover,
+#hero #lg-nav .nav-btn.about:hover,
+#hero #lg-nav .nav-btn.portfolio:hover,
+#hero #lg-nav .nav-btn.contact:hover {
+  width: 150px;
+  height: 50px;
+}
+
+/* Section - About */
+#about .section-title {
+  background: url('../img/RESUME.png') no-repeat center center/contain;
+}
+
+#about ul li span {
+  color: var(--gray);
+}
+
+#about .about-img .img-wrap {
+  padding: 0;
+  width: 325px;
+  height: 440px;
+  background: var(--red);
+  border-radius: 20px;
+  position: relative;
+}
+
+#about .about-img .img-wrap img {
+  padding: 0;
+  width: 325px;
+  height: 440px;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  border-radius: 10px;
+}
+
+/* Section - Facts */
+#facts h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+#facts span.bullet {
+  width: 50px;
+  height: 1px;
+  margin: .5rem 1rem 0 0;
+  display: inline-block;
+  background: #fff;
+}
+
+#facts p {
+  line-height: 20px;
+}
+
+#facts .row .col-md {
+  margin-right: 2.5rem;
+  padding: 2rem;
+  border: 1px solid var(--gray);
+  border-radius: 20px;
+}
+
+#facts .row .col-md:last-child {
+  margin-right: 0;
+}
+
+#facts .inner-wrap {
+  width: 60%;
+}
+
+/* Section - Experience */
+#experience .inner {
+  padding: 3rem 0 2rem;
+  position: relative;
+}
+
+#experience .vertical-line {
+  padding: 1rem 3rem 0;
+  border-left: 1px solid var(--gray);
+}
+
+#experience .inner .icon {
+  position: absolute;
+  top: -3px;
+  left: -25px;
+}
+
+#experience .inner .icon i {
+  margin-right: 1rem;
+  padding: 1rem;
+  display: block;
+  background: var(--red);
+  border: 20%;
+  border-radius: 35px;
+  font-size: 20px;
+}
+
+#experience .inner .icon p.duration {
+  padding: .5rem 1rem;
+  margin-bottom: 0;
+  background: var(--gray);
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+#experience h5 {
+  padding-bottom: .3rem;
+}
+
+/* Section - Portfolio */
+#portfolio .section-title {
+  background: url('../img/PROJECTS.png') no-repeat center center/contain;
+}
+
+#portfolio .img-wrap {
+  display: flex;
+  align-items: center;
+}
+
+#portfolio .img-wrap .inner {
+  text-align: center;
+  flex: 1;
+}
+
+#portfolio .img-wrap .inner:first-child {
+  flex: 1.7;
+}
+
+#portfolio .img-wrap .inner .inner-item {
+  margin: 1rem;
+}
+
+#portfolio .img-wrap .inner .inner-item.aside-img {
+  height: 100%;
+}
+
+#portfolio .inner-wrap .inner-item.a {
+  width: 45%;
+}
+
+#portfolio .inner-wrap .inner-item.b {
+  width: 65%;
+}
+
+#portfolio .inner-wrap .inner-item.a img, 
+#portfolio .inner-wrap .inner-item.b img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Section - Contact */
+#contact .section-title {
+  background: url('../img/CONTACTS.png') no-repeat center center/contain;
+}
+
+#contact .contact-info span {
+  color: var(--gray);
+}
