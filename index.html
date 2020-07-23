@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Mobile Nav -->
-    <div id="mobile-nav" class="container">
+    <div id="mobile-nav" class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand sr-only" href="#">JONATHAN DOE</a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,16 +30,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"><i class="fas fa-home"></i> HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#hero"><i class="fas fa-home"></i> HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-user-alt"></i> ABOUT</a>
+              <a class="nav-link" href="#about"><i class="fas fa-user-alt"></i> ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-briefcase"></i> PORTFOLIO</a>
+              <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i> PORTFOLIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-envelope-open-text"></i> CONTACT</a>
+              <a class="nav-link" href="#contact"><i class="fas fa-envelope-open-text"></i> CONTACT</a>
             </li>
           </ul>
         </div>
@@ -49,12 +49,14 @@
     <!-- Header -->
     <header id="hero">
       <div class="hero-img"></div>
-      <div class="hero-text">
-        <h2>HI &nbsp;THERE!</h2>
-        <h1>I'M <span class="base-color">JONATHAN DOE</span></h1>
-        <p class="pt-2 pb-4">I’m a Canadian based graphic designer & photographer focused on creating amazing products, I am passionate about telling stories with a lasting experience.</p>
-        <a href="#about" class="btn btn-lg">MORE ABOUT ME</a> 
-        <a href="#portfolio" class="btn btn-lg outline">PORTFOLIO</a>
+      <div class="overlay">
+        <div class="hero-text">
+          <h2>HI &nbsp;THERE!</h2>
+          <h1>I'M <span class="base-color">JONATHAN DOE</span></h1>
+          <p class="pt-2 pb-4">I’m a Canadian based graphic designer & photographer focused on creating amazing products, I am passionate about telling stories with a lasting experience.</p>
+          <a href="#about" class="btn btn-lg mb-2">MORE ABOUT ME</a> 
+          <a href="#portfolio" class="btn btn-lg outline">PORTFOLIO</a>
+        </div>
       </div>
 
       <nav id="lg-nav">
@@ -79,8 +81,11 @@
     <section id="about" class="container">
       <h2 class="section-title">ABOUT <span class="base-color">ME</span></h2>
       <div class="row align-items-center">
-        <div class="col-md-8">
+        <div class="col-xl-8 m-auto">
           <h3 class="mb-4">PERSONAL INFOS</h3>
+          <div class="about-img-sm mb-5 text-center">
+            <img src="img/about-img-sm.png" class="img-fluid" alt="Jonathan Doe">
+          </div>
           <div class="d-flex">
             <ul>
               <li>
@@ -121,7 +126,7 @@
           <a href="#about" class="btn btn-lg mt-3">DOWNLOAD CV</a> 
         </div>
 
-        <div class="about-img col-md-3 ml-md-4">
+        <div class="about-img col-xl-3 ml-md-4">
           <div class="img-wrap">
             <img src="img/about-img.png" class="img-fluid" alt="Jonathan Doe">
           </div>
@@ -133,7 +138,7 @@
     <section id="facts" class="container">
       <div class="hline d-flex justify-content-center mb-5"><hr></div>
       <div class="row">
-        <div class="col-md">
+        <div class="col-lg outline">
           <div class="inner-wrap mx-auto">
             <h2 class="base-color">10+</h2>
             <div class="d-flex">
@@ -143,7 +148,7 @@
           </div>
         </div>
 
-        <div class="col-md">
+        <div class="col-lg outline">
           <div class="inner-wrap mx-auto">
             <h2 class="base-color">19+</h2>
             <div class="d-flex">
@@ -153,7 +158,7 @@
           </div>
         </div>
 
-        <div class="col-md">
+        <div class="col-lg outline">
           <div class="inner-wrap mx-auto">
             <h2 class="base-color">13+</h2>
             <div class="d-flex">
@@ -168,7 +173,7 @@
 
     <!-- Section - Experience -->
     <section id="experience" class="container">
-      <h3 class="mb-5 text-center">EXPERINCE & EDUCATION</h3>
+      <h3 class="mb-5 text-center-sm">EXPERINCE & EDUCATION</h3>
       <div class="row">
         <div class="col-md">
           <div class="inner">
@@ -221,7 +226,7 @@
             </div>
             <div class="vertical-line">
               <h5>MASTER DEGREE - OXFORD UNIVERSITY</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisi.</p>
             </div>
           </div>
           <div class="inner">
@@ -245,19 +250,19 @@
         <div class="img-wrap">
           <div class="inner">
             <div class="inner-wrap d-flex">
-              <div class="inner-item a">
+              <div class="inner-item item1 a">
                 <img src="img/work/work1.png" class="img-fluid" alt="My Work">
               </div>
-              <div class="inner-item b">
+              <div class="inner-item item2 b">
                 <img src="img/work/work2.png" class="img-fluid" alt="My Work">
               </div>
             </div>
-            <div class="inner-item">
+            <div class="inner-item item3">
               <img src="img/work/work3.png" class="img-fluid" alt="My Work">
             </div>
           </div>
           <div class="inner">
-            <div class="inner-item aside-img">
+            <div class="inner-item item4 aside-img">
               <img src="img/work/work4.png" class="img-fluid" alt="My Work">
             </div>
           </div>
@@ -272,7 +277,7 @@
       <h2 class="section-title mb-5">GET IN <span class="base-color">TOUCH</span></h2>
 
       <div class="row">
-        <div class="col-md p-5">
+        <div class="contact-info-wrap col-lg p-5">
           <h5>I'M WAITING TO HEAR FROM YOU!</h5>
           <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
           <ul class="contact-info">
@@ -314,7 +319,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md p-5">
+        <div class="col-lg p-5">
           <form action="#" method="#">
             <div class="form-group">
               <label for="name" class="sr-only">Name</label>
@@ -344,6 +349,7 @@
         <span> | </span>
         <a href="">PORTFOLIO</a>
       </p>
+      <p>COPY &copy; 2020 BY ZURI. ALL RIGHT RESERVED</p>
     </footer>
 
 
