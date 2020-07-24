@@ -131,7 +131,11 @@ ul {
 }
 
 #hero .btn {
-  margin-right: 2rem;
+  margin-right: 1rem;
+}
+
+#hero .btn:last-child {
+  margin-right: 0;
 }
 
 #hero #lg-nav {
@@ -307,6 +311,10 @@ ul {
 #portfolio .section-title {
   background: url('../img/PROJECTS.png') no-repeat center center/contain;
   margin-bottom: 5rem;
+}
+
+#portfolio a {
+  cursor: zoom-in;
 }
 
 #portfolio .img-wrap {
