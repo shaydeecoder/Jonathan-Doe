@@ -306,6 +306,7 @@ ul {
 /* Section - Portfolio */
 #portfolio .section-title {
   background: url('../img/PROJECTS.png') no-repeat center center/contain;
+  margin-bottom: 5rem;
 }
 
 #portfolio .img-wrap {
@@ -342,6 +343,40 @@ ul {
 #portfolio .inner-wrap .inner-item.b img {
   width: 100%;
   height: 100%;
+}
+
+/* Portfolio Background Lines */
+#portfolio {
+  position: relative;
+}
+
+#portfolio .bg-line {
+  position: absolute;
+  border: 20px solid var(--red);
+  z-index: -1;
+}
+
+#portfolio .bg-line.line1 {
+  width: 74%;
+  height: 60%;
+  border-left: none;
+  top: 150px;
+}
+
+#portfolio .bg-line.line2 {
+  width: 30%;
+  height: 60%;
+  border-right: none;
+  right: 0;
+  bottom: 0;
+}
+
+#portfolio .bg-line.line3 {
+  width: 35%;
+  height: 55%;
+  border-bottom: none;
+  left: 20%;
+  bottom: 120px;
 }
 
 /* Section - Contact */
