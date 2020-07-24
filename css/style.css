@@ -260,7 +260,8 @@ ul {
 }
 
 #facts .inner-wrap {
-  width: 60%;
+  margin: auto;
+  width: 150px;
 }
 
 /* Section - Experience */
@@ -322,7 +323,7 @@ ul {
 }
 
 #portfolio .img-wrap .inner .inner-item {
-  margin: 1rem;
+  padding: 1rem;
 }
 
 #portfolio .img-wrap .inner .inner-item.aside-img {
@@ -480,9 +481,6 @@ footer p span {
     margin-right: 0;
     margin-bottom: 1.5rem;
   }
-  #facts .inner-wrap {
-    width: 30%;
-  }
 }
 
 
@@ -547,8 +545,29 @@ footer p span {
     font-size: 16px;
   }
 
+  /* Section - Portfolio */
+  #portfolio .img-wrap .inner .inner-item {
+    padding: .5rem;
+  }
+  #portfolio .img-wrap .item2 {
+    order: 1;
+  }
+  #portfolio .img-wrap .item1 {
+    order: 2;
+  }
+  #portfolio .img-wrap {
+    flex-direction: column;
+  }
+  #portfolio .img-wrap .inner:first-child {
+    flex: 1;
+  }
+  #portfolio .img-wrap .inner .aside-img,
+  #portfolio .img-wrap .inner .aside-img img {
+    width: 100%;
+  }
+
   /* section - contact */
-  #contact .contact-info-wrap.p-5 {
+  #contact .contact-info-wrap.p-3 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
