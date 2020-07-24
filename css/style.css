@@ -162,15 +162,15 @@ ul {
 }
 
 #hero #lg-nav .nav-btn.about {
-  background: url('../img/nav-buttons/about.png') no-repeat center right/contain;
+  background: url('../img/nav-buttons/about-default.png') no-repeat center right/contain;
 }
 
 #hero #lg-nav .nav-btn.portfolio {
-  background: url('../img/nav-buttons/portfolio.png') no-repeat center right/contain;
+  background: url('../img/nav-buttons/portfolio-dafault.png') no-repeat center right/contain;
 }
 
 #hero #lg-nav .nav-btn.contact {
-  background: url('../img/nav-buttons/contact.png') no-repeat center right/contain;
+  background: url('../img/nav-buttons/contact-default.png') no-repeat center right/contain;
 }
 
 #hero #lg-nav .nav-btn.home:hover {
