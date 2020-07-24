@@ -1,3 +1,6 @@
+// INITIALIAZING AOS ANIMATION
+AOS.init();
+
 // FACTS
 $(function(){
   $('.counter').counterUp({
